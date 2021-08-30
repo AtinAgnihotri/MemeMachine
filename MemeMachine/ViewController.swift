@@ -204,7 +204,5 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         present(ac, animated: true)
     }
-
-
 }
 
