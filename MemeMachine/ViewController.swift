@@ -72,7 +72,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @objc func shareTapped() {
-        
+        if let imageData = memeImageView.image?.jpegData(compressionQuality: 0.8) {
+            let ac = UIActivityViewController(activityItems: [imageData], applicationActivities: [])
+            ac.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+            present(ac, animated: true)
+        }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

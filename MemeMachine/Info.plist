@@ -57,6 +57,8 @@
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Please allow access to import from and save to the photo library</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Please allow access to import photo from camera</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
