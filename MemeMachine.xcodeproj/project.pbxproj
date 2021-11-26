@@ -13,9 +13,11 @@
 		85AD243926DC91F400702CE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85AD243726DC91F400702CE7 /* Main.storyboard */; };
 		85AD243B26DC91F700702CE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85AD243A26DC91F700702CE7 /* Assets.xcassets */; };
 		85AD243E26DC91F700702CE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85AD243C26DC91F700702CE7 /* LaunchScreen.storyboard */; };
+		ADEEFE69C8DE47439A54BBB5 /* libPods-MemeMachine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E235CAE8D3C1ED607E7B6541 /* libPods-MemeMachine.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B527EA3DD3D1CCA1FBF5F84 /* Pods-MemeMachine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMachine.debug.xcconfig"; path = "Target Support Files/Pods-MemeMachine/Pods-MemeMachine.debug.xcconfig"; sourceTree = "<group>"; };
 		85AD242E26DC91F400702CE7 /* MemeMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85AD243126DC91F400702CE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85AD243326DC91F400702CE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		85AD243A26DC91F700702CE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85AD243D26DC91F700702CE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85AD243F26DC91F700702CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0EE3682A10FBB9F5EE6A5F4 /* Pods-MemeMachine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMachine.release.xcconfig"; path = "Target Support Files/Pods-MemeMachine/Pods-MemeMachine.release.xcconfig"; sourceTree = "<group>"; };
+		E235CAE8D3C1ED607E7B6541 /* libPods-MemeMachine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MemeMachine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADEEFE69C8DE47439A54BBB5 /* libPods-MemeMachine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				85AD243026DC91F400702CE7 /* MemeMachine */,
 				85AD242F26DC91F400702CE7 /* Products */,
+				868DD687A4E0D0AB966444FF /* Pods */,
+				C631E5D1F154D6BD8E1C7B23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = MemeMachine;
 			sourceTree = "<group>";
 		};
+		868DD687A4E0D0AB966444FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B527EA3DD3D1CCA1FBF5F84 /* Pods-MemeMachine.debug.xcconfig */,
+				E0EE3682A10FBB9F5EE6A5F4 /* Pods-MemeMachine.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C631E5D1F154D6BD8E1C7B23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E235CAE8D3C1ED607E7B6541 /* libPods-MemeMachine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85AD244226DC91F700702CE7 /* Build configuration list for PBXNativeTarget "MemeMachine" */;
 			buildPhases = (
+				7CC26103FFAC35ACC54CA90E /* [CP] Check Pods Manifest.lock */,
 				85AD242A26DC91F400702CE7 /* Sources */,
 				85AD242B26DC91F400702CE7 /* Frameworks */,
 				85AD242C26DC91F400702CE7 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CC26103FFAC35ACC54CA90E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemeMachine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		85AD242A26DC91F400702CE7 /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		85AD244326DC91F700702CE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B527EA3DD3D1CCA1FBF5F84 /* Pods-MemeMachine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +354,7 @@
 		};
 		85AD244426DC91F700702CE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0EE3682A10FBB9F5EE6A5F4 /* Pods-MemeMachine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
